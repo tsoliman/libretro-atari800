@@ -441,7 +441,7 @@ int Atari800_Initialise(int *argc, char *argv[])
 //#ifndef ANDROID
 #if !defined(ANDROID) || defined(__LIBRETRO__)
 #if defined(__LIBRETRO__)
-	SYSROM_FindInDir(retro_system_directory, TRUE);
+	SYSROM_FindInDir(retro_system_directory, FALSE);
 #endif
 	SYSROM_FindInDir(".", TRUE); /* current directory */
 #if defined(unix) || defined(__unix__) || defined(__linux__)
